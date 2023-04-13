@@ -1,0 +1,164 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
+    <link rel="icon" href="{% static 'Images/Logoicon.ico' %}">
+    <title>Home</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'JS/Scripts.js' %}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-7WbdNwJKH0FP2Q4g4Kj7VX9vHk/7VJhjxuN8n7WLG5w5R5E1+vGUNR8LfQWlL30vA3lqLrkEDa8e7WYmqgG4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg mi-navbar">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'home' %}"><spam class="activate">Home</spam></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'adoptar' %}"><spam class="inac">Adoptar</spam></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'como_adoptar' %}"><spam class="inac">Cómo Adoptar</spam></a>
+                    </li>
+                    <a class="navbar-brand" href="{% url 'home' %}">
+                        <img src="{% static 'Images/Logo.png' %}" alt="Logo del sitio web" style="width: 130px; height: 130px; object-fit: contain;">
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}"><spam class="inac">Sobre Nosotros</spam></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contacto' %}"><span class="inac">Contacto</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'donacion' %}"><spam class="inac">Donaciones</spam></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <a href="#" class="volver-arriba"><img src="{% static 'Images/flechas-arriba.png' %}" alt="volver arriba"></a>
+
+    <div class="portadaHome">
+        <img class="portada_home" src="{% static 'Images/chihuahua_gato2.png' %}" alt="Chihuahua sobre gato" 
+        style="width: 1348px; height: 1348px; object-fit: contain; margin-top: -280px;">
+        
+        <img class="portada_home2" src="{% static 'Images/chihuahua_gato.png' %}" alt="Chihuahua sobre gato" 
+        style="width: 720px; height: 720px; object-fit: contain; margin-top: 121px;
+         position: absolute; top: 0; left: 50px; z-index: 1;">
+
+        <h2 class="titulo1">¡Agenda tu <spam>visita ahora!</spam></h2>
+        <h4 class="subtitulo1">Agenda una cita para visitar a nuestros adorables animales y encontrar a tu compañero perfecto hoy mismo!</h4>
+
+        <img class="clock" src="{% static 'Images/clock.png' %}" alt="reloj" >
+        <img class="calendar" src="{% static 'Images/calendar.png' %}" alt="calendario" >
+        <button class="btn_glass"><a href="https://calendly.com/ng20-0079/agendar-visitas" target="_blank">Programa una cita</a></button>
+    </div>
+
+    <div class="pasosAdoptar_Home">
+        <h2 class="titulo2">Pasos para Adoptar</h2>
+
+        <h3 class="subtitulo2">Investiga</h3>
+        <p class="p1">Investiga los refugios y organizaciones de rescate cercanos que ofrecen animales para adopción.</p>
+        
+        <h3 class="subtitulo3">Completa la Solicitud</h3>
+        <p class="p2">Una vez que hayas identificado un animal que deseas adoptar, completa la solicitud de adopción proporcionada por el refugio.</p>
+        
+        <h3 class="subtitulo4">Programa una Visita</h3>
+        <p class="p3">Programa una visita para conocer al animal en persona.</p>
+        
+        <h3 class="subtitulo5">Firma el Contrato</h3>
+        <p class="p4">Si decides seguir adelante con la adopción, firma el contrato de adopción proporcionado por la organización de rescate.</p>
+        
+        <img class="elipse5" src="{% static 'Images/Ellipse_5.png' %}" alt="elipse" >
+        <img class="elipse6" src="{% static 'Images/Ellipse_6.png' %}" alt="elipse" >
+        <img class="gatito-blanco-negro" src="{% static 'Images/gatito-blanco-negro.png' %}" alt="gatito blanco con negro" >
+
+        <button class="btn_neu"><a href="{% url 'como_adoptar' %}">Conocer Más</a></button>
+    </div>
+
+    <div class="adoptar_home">
+        <h1 class="titulo3">Animales en adopción: </h1>
+        <h1 class="titulo4">¡Encuentra tu <span class="resaltar">match</span> perfecto!</h1>
+        <p class="p5">Encuentra a tu nuevo amigo peludo en nuestra 
+                    <br>
+                      sección de animales en adopción. Desde perros 
+                    <br>
+                      y gatos hasta conejos, hay una gran variedad 
+                    <br>
+                      de animales esperando a ser adoptados.
+        </p>
+            <img class="Stella" src="{% static 'Images/Stella.png' %}" alt="gato" >
+            <img class="Salem" src="{% static 'Images/Salem.png' %}" alt="perro" >
+            <img class="Nala" src="{% static 'Images/Nala.png' %}" alt="gato" >
+
+        <img class="patita1" src="{% static 'Images/patita1.png' %}" alt="paptita de gato" >
+        <img class="patita2" src="{% static 'Images/patita2.png' %}" alt="patita de gato" >
+
+        <button class="btn_neu2"><a href="{% url 'adoptar' %}">Ver animales en adopción</a></button>
+    </div>
+
+    <div class="about_home">
+        <h1 class="titulo10">Sobre Nosotros</h1>
+        <p class="p10">Somos un equipo apasionado comprometidos 
+                        <br>
+                       con ayudar a mejorar la vida de los animales 
+                       <br>
+                       en todo el país. Nos esforzamos por crear conciencia 
+                       <br>
+                       sobre la importancia de la adopción de animales 
+                       <br>
+                       y trabajar en conjunto con organizaciones de 
+                       <br>
+                       rescate para encontrar hogares amorosos para 
+                       <br>
+                       animales necesitados. 
+                    </p>
+        <button class="btn btn-light btn10"><a href="{% url 'about' %}">Ver Más</a></button>
+        <img class="persona-perro" src="{% static 'Images/perro-persona.png' %}" alt="persona-perro" >
+        <img class="vt1" src="{% static 'Images/vtc1.png' %}">
+        <img class="vt2" src="{% static 'Images/vtc2.png' %}">
+        <img class="vt3" src="{% static 'Images/vtc3.png' %}">
+        <div class="card_home"></div>
+    </div>
+
+    <div class="Donar_Home">
+        <p class="p11">¡Porque cada donación cuenta, incluso la más pequeña! 
+            <br>
+            Tu contribución nos ayuda a proporcionar atención médica, 
+            <br>
+            alimento y un hogar seguro para los animales mientras  
+            <br>
+            esperan ser adoptados. ¡Gracias por tu generosidad!
+        </p>
+        <img class="conejo" src="{% static 'Images/conejo-piernas.png' %}" alt="conejo" >
+        <img class="perro" src="{% static 'Images/perro-perdiguero.png' %}" alt="perro" >
+        <img class="donate" src="{% static 'Images/donate.gif' %}" >
+        <button class="btn_neu3"><a href="{% url 'donacion' %}">Donar</a></button>
+    </div>
+    
+    <!-- footer -->
+    <footer>
+        <img class="footer" src="{% static 'Images/footer.png' %}">
+        <img class="perrodot" src="{% static 'Images/perrodot.png' %}">
+        <p class="p15">© 2023 Dottare Me</p>
+        <p class="p16"><a href="#">Términos & Condiciones</a></p>
+        <img class="fb" src="{% static 'Images/fb.png' %}">
+        <img class="ig" src="{% static 'Images/ig.png' %}">
+    </footer>
+
+    <script src="{% static 'JS\Scripts.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
+    <link rel="icon" href="{% static 'Images/Logoicon.ico' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'JS/Scripts.js' %}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-7WbdNwJKH0FP2Q4g4Kj7VX9vHk/7VJhjxuN8n7WLG5w5R5E1+vGUNR8LfQWlL30vA3lqLrkEDa8e7WYmqgG4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Adoptar</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg mi-navbar">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'home' %}"><spam class="inac">Home</spam></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'adoptar' %}"><spam class="activate">Adoptar</spam></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'como_adoptar' %}"><spam class="inac">Cómo Adoptar</spam></a>
+                    </li>
+                    <a class="navbar-brand" href="{% url 'home' %}">
+                        <img src="{% static 'Images/Logo.png' %}" alt="Logo del sitio web" style="width: 130px; height: 130px; object-fit: contain;">
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}"><spam class="inac">Sobre Nosotros</spam></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contacto' %}"><span class="inac">Contacto</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'donacion' %}"><spam class="inac">Donaciones</spam></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <h1 class="titulo0">¡Adopta a tu Mejor Amigo!</h1>
+    <h3 class="subtitulo0">Encuentra a tu compañero perfecto.</h3>
+
+    <div class="container my-4">
+        <form method="GET" action="{% url 'buscar_resultados' %}">
+          <div class="row">
+            <div class="col-md-4">
+              <select class="form-control" name="tipo">
+                <option value="">Todos</option>
+                <option value="Perro">Perro</option>
+                <option value="Gato">Gato</option>
+                <option value="Conejo">Conejo</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="q" placeholder="Buscar animales...">
+            </div>
+            <div class="col-md-2">
+              <button type="submit" class="btn btn-primary btn-block">Buscar</button>
+            </div>
+          </div>
+        </form>
+      </div>      
+
+</body>
+</html>

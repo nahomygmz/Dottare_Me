@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
+    <link rel="icon" href="{% static 'Images/Logoicon.ico' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'JS/Scripts.js' %}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-7WbdNwJKH0FP2Q4g4Kj7VX9vHk/7VJhjxuN8n7WLG5w5R5E1+vGUNR8LfQWlL30vA3lqLrkEDa8e7WYmqgG4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contacto</title>
+</head>
+<body>
+     <!-- navbar -->
+     <nav class="navbar navbar-expand-lg mi-navbar">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'home' %}"><spam class="inac">Home</spam></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'adoptar' %}"><spam class="inac">Adoptar</spam></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'como_adoptar' %}"><spam class="inac">Cómo Adoptar</spam></a>
+                    </li>
+                    <a class="navbar-brand" href="{% url 'home' %}">
+                        <img src="{% static 'Images/Logo.png' %}" alt="Logo del sitio web" style="width: 130px; height: 130px; object-fit: contain;">
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}"><spam class="inac">Sobre Nosotros</spam></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contacto' %}"><span class="activate">Contacto</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'donacion' %}"><spam class="inac">Donaciones</spam></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     </nav>
+
+    <div class="formulario-contacto">
+        <img class="imagen50" src="{% static 'Images\Contacto\mujer-sosteniendo-adorable-perro-refugio.jpg' %}"/>
+        <h1 class="titulo50">¡Comunícate con
+            <br>Nosotros!
+        </h1>
+        <h3 class="subtitulo50">Si necesitas ayuda o más información, 
+            <br>estaremos encantados de ayudarte.
+        </h3>
+        <form method="POST" action="{% url 'contacto' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn_neu4">Enviar</button>
+        </form>
+    </div>    
+      
+
+    <!-- footer -->
+        <footer style="position: relative; top: -3090px;">
+            <img class="footer" src="{% static 'Images/footer.png' %}">
+            <img class="perrodot" src="{% static 'Images/perrodot.png' %}">
+            <p class="p15">© 2023 Dottare Me</p>
+            <p class="p16"><a href="#">Términos & Condiciones</a></p>
+            <img class="fb" src="{% static 'Images/fb.png' %}">
+            <img class="ig" src="{% static 'Images/ig.png' %}">
+        </footer>
+
+</body>
+</html>

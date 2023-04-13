@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
+    <link rel="icon" href="{% static 'Images/Logoicon.ico' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'JS/Scripts.js' %}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-7WbdNwJKH0FP2Q4g4Kj7VX9vHk/7VJhjxuN8n7WLG5w5R5E1+vGUNR8LfQWlL30vA3lqLrkEDa8e7WYmqgG4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cómo Adoptar</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg mi-navbar">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'home' %}"><spam class="inac">Home</spam></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'adoptar' %}"><spam class="inac">Adoptar</spam></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'como_adoptar' %}"><spam class="activate">Cómo Adoptar</spam></a>
+                    </li>
+                    <a class="navbar-brand" href="{% url 'home' %}">
+                        <img src="{% static 'Images/Logo.png' %}" alt="Logo del sitio web" style="width: 130px; height: 130px; object-fit: contain;">
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}"><spam class="inac">Sobre Nosotros</spam></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contacto' %}"><span class="inac">Contacto</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'donacion' %}"><spam class="inac">Donaciones</spam></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <a href="#" class="volver-arriba"><img src="{% static 'Images/flechas-arriba.png' %}" alt="volver arriba"></a>
+
+    <div>
+        <img class="portada_comoAdoptar" src="{% static 'Images\ComoAdoptar\adorable-perro-chihuahua-duena.jpg' %}" alt="chica sosteniendo chihuahua" />
+        <div class="portada22"></div>
+        <h1 class="titulo40">¡Adopta un animal!</h1>
+        <h3 class="titulo41">Todo lo que necesitas saber</h3>
+    </div>
+
+    <div>
+        <h1 class="titulo30">Proceso de Adopción</h1>
+        <h3 class="subtitulo30">Adopta un amor siempre</h3>
+
+        <img class="punto1" src="{% static 'Images\ComoAdoptar\punto1.png' %}" />
+        <p class="parrafo1">Completa una solicitud de 
+            <br>adopción en línea o en persona, 
+            <br>proporcionando información 
+            <br>personal.
+        </p>
+            
+        <img class="punto2" src="{% static 'Images\ComoAdoptar\punto2.png' %}" />
+        <p class="parrafo2">Nuestro equipo revisará tu 
+            <br>solicitud y programaremos una 
+            <br>visita al refugio para que 
+            <br>puedas conocer al animal.
+        </p>
+
+        <img class="punto3" src="{% static 'Images\ComoAdoptar\punto3.png' %}" />
+        <p class="parrafo3">Si cumples con los requisitos, 
+            <br>aprobaremos tu solicitud y 
+            <br>podrás llevar al animal a su 
+            <br>nuevo hogar.
+        </p>
+    </div>
+
+    <div>
+        <h1 class="titulo20">Documentos Necesarios</h1>
+        <h3 class="subtitulo20">Asegúrate de tener todo lo necesario para la adopción</h3>
+
+        <img class="img1" src="{% static 'Images\ComoAdoptar\Imagen1.png' %}" />
+        <img class="img2" src="{% static 'Images\ComoAdoptar\Imagen2.png' %}" />
+        <img class="img3" src="{% static 'Images\ComoAdoptar\Imagen3.png' %}" />
+        <img class="img4" src="{% static 'Images\ComoAdoptar\Imagen4.png' %}" />
+
+        <img class="patita3" src="{% static 'Images\ComoAdoptar\Patita3.png' %}" />
+        <img class="patita5" src="{% static 'Images\ComoAdoptar\Patita5.png' %}" />
+
+        <h2 class="titulo70">Requisitos para Adoptar</h2>
+        <p class="parrafo70">Antes de adoptar: Los requisitos 
+            <br>para dar un hogar a un animal
+        </p>
+        <a  href="{{ pdf_url }}" download>
+            <button class="btn_neu7">Descargar PDF</button>
+        </a>
+
+        <h2 class="titulo80">¿Interesado en Adoptar?</h2>
+        <p class="parrafo80">Adoptar es una gran responsabilidad:
+            <br> Lo que debes saber antes de adoptar
+        </p>
+        <a href="{{ pdf_url2 }}" download>
+            <button class="btn_neu8">Descargar PDF</button>
+        </a>
+    </div>
+
+    <!-- footer -->
+    <footer style="position: relative; top: -1250px;">
+        <img class="footer" src="{% static 'Images/footer.png' %}">
+        <img class="perrodot" src="{% static 'Images/perrodot.png' %}">
+        <p class="p15">© 2023 Dottare Me</p>
+        <p class="p16"><a href="#">Términos & Condiciones</a></p>
+        <img class="fb" src="{% static 'Images/fb.png' %}">
+        <img class="ig" src="{% static 'Images/ig.png' %}">
+    </footer>
+
+</body>
+</html>
