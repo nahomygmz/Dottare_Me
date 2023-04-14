@@ -52,27 +52,111 @@
     <h1 class="titulo0">¡Adopta a tu Mejor Amigo!</h1>
     <h3 class="subtitulo0">Encuentra a tu compañero perfecto.</h3>
 
-    <div class="container my-4">
-        <form method="GET" action="{% url 'buscar_resultados' %}">
-          <div class="row">
-            <div class="col-md-4">
-              <select class="form-control" name="tipo">
-                <option value="">Todos</option>
-                <option value="Perro">Perro</option>
-                <option value="Gato">Gato</option>
-                <option value="Conejo">Conejo</option>
-                <option value="Otro">Otro</option>
-              </select>
-            </div>
-            <div class="col-md-6">
-              <input type="text" class="form-control" name="q" placeholder="Buscar animales...">
-            </div>
-            <div class="col-md-2">
-              <button type="submit" class="btn btn-primary btn-block">Buscar</button>
-            </div>
-          </div>
+    <div class="search-container" style="z-index: 10;">
+        <form action="{% url 'buscar_resultados' %}" method="GET">
+          <label class="titulo9" for="query">Buscar:</label>
+          <input type="text" name="q" id="query" placeholder="Buscar animal...">
+          <label for="filter">Filtrar por:</label>
+          <select name="filter" id="filter">
+            <option value="">Todos</option>
+            <option value="dogs">Perros</option>
+            <option value="cats">Gatos</option>
+            <option value="rabbits">Conejos</option>
+            <option value="others">Otros</option>
+          </select>
+          <button type="submit" class="search-button">Buscar</button>
         </form>
-      </div>      
+    </div>
+
+    <img class="vtc4" src="{% static 'Images\Adoptar\vtc4.png' %}" />
+    <img class="vtc5" src="{% static 'Images\Adoptar\vtc5.png' %}" />
+    <img class="vtc6" src="{% static 'Images\Adoptar\vtc6.png' %}" />
+    <img class="vtc7" src="{% static 'Images\Adoptar\vtc7.png' %}" />
+    
+    <div style="position: absolute; left: 100px; top: auto;">
+        <div style="position: absolute; top: -199px;">        
+            <div class="card_animal"></div>
+            <a href="{% url 'perfil_animal' %}"><img class="imagen_adoptar" src="{% static 'Images\Adoptar\doggo3-1.jpg' %}" /> </a>
+            <div class="bg_adoptar"></div>   
+            <label class="nombre_adoptar"><a href="{% url 'perfil_animal' %}">Doggo</a></label>
+            <p class="edad_sexo">Varón, 9 meses</p>  
+        </div>
+        
+        <div style="position: absolute; top: -199px; left: 320px;">        
+            <div class="card_animal"></div>
+            <a href="{% url 'perfil_animal' %}"><img class="imagen_adoptar" src="{% static 'Images\Adoptar\doggo3-1.jpg' %}" /> </a>
+            <div class="bg_adoptar"></div>   
+            <label class="nombre_adoptar"><a href="{% url 'perfil_animal' %}">Doggo</a></label>
+            <p class="edad_sexo">Varón, 9 meses</p>  
+        </div>
+    
+        <div style="position: absolute; top: -199px; left: 640px;">        
+            <div class="card_animal"></div>
+            <a href="{% url 'perfil_animal' %}"><img class="imagen_adoptar" src="{% static 'Images\Adoptar\doggo3-1.jpg' %}" /> </a>
+            <div class="bg_adoptar"></div>   
+            <label class="nombre_adoptar"><a href="{% url 'perfil_animal' %}">Doggo</a></label>
+            <p class="edad_sexo">Varón, 9 meses</p>  
+        </div>
+    
+        <div style="position: absolute; top: 160px;">        
+            <div class="card_animal"></div>
+            <a href="{% url 'perfil_animal' %}"><img class="imagen_adoptar" src="{% static 'Images\Adoptar\doggo3-1.jpg' %}" /> </a>
+            <div class="bg_adoptar"></div>   
+            <label class="nombre_adoptar"><a href="{% url 'perfil_animal' %}">Doggo</a></label>
+            <p class="edad_sexo">Varón, 9 meses</p>  
+        </div>
+    
+        <div style="position: absolute; top: 160px; left: 320px;">        
+            <div class="card_animal"></div>
+            <a href="{% url 'perfil_animal' %}"><img class="imagen_adoptar" src="{% static 'Images\Adoptar\doggo3-1.jpg' %}" /> </a>
+            <div class="bg_adoptar"></div>   
+            <label class="nombre_adoptar"><a href="{% url 'perfil_animal' %}">Doggo</a></label>
+            <p class="edad_sexo">Varón, 9 meses</p>  
+        </div>
+
+        <div style="position: absolute; top: 160px; left: 640px;">        
+            <div class="card_animal"></div>
+            <a href="{% url 'perfil_animal' %}"><img class="imagen_adoptar" src="{% static 'Images\Adoptar\doggo3-1.jpg' %}" /> </a>
+            <div class="bg_adoptar"></div>   
+            <label class="nombre_adoptar"><a href="{% url 'perfil_animal' %}">Doggo</a></label>
+            <p class="edad_sexo">Varón, 9 meses</p>  
+        </div>
+
+        <div style="position: absolute; top: 520px;">        
+            <div class="card_animal"></div>
+            <a href="{% url 'perfil_animal' %}"><img class="imagen_adoptar" src="{% static 'Images\Adoptar\doggo3-1.jpg' %}" /> </a>
+            <div class="bg_adoptar"></div>   
+            <label class="nombre_adoptar"><a href="{% url 'perfil_animal' %}">Doggo</a></label>
+            <p class="edad_sexo">Varón, 9 meses</p>  
+        </div>
+    
+        <div style="position: absolute; top: 520px; left: 320px;">        
+            <div class="card_animal"></div>
+            <a href="{% url 'perfil_animal' %}"><img class="imagen_adoptar" src="{% static 'Images\Adoptar\doggo3-1.jpg' %}" /> </a>
+            <div class="bg_adoptar"></div>   
+            <label class="nombre_adoptar"><a href="{% url 'perfil_animal' %}">Doggo</a></label>
+            <p class="edad_sexo">Varón, 9 meses</p>  
+        </div>
+
+        <div style="position: absolute; top: 520px; left: 640px;">        
+            <div class="card_animal"></div>
+            <a href="{% url 'perfil_animal' %}"><img class="imagen_adoptar" src="{% static 'Images\Adoptar\doggo3-1.jpg' %}" /> </a>
+            <div class="bg_adoptar"></div>   
+            <label class="nombre_adoptar"><a href="{% url 'perfil_animal' %}">Doggo</a></label>
+            <p class="edad_sexo">Varón, 9 meses</p>  
+        </div>
+    </div>
+    
+
+    <!-- footer -->
+    <footer style="position: absolute; top: -2600px;">
+        <img class="footer" src="{% static 'Images/footer.png' %}">
+        <img class="perrodot" src="{% static 'Images/perrodot.png' %}">
+        <p class="p15">© 2023 Dottare Me</p>
+        <p class="p16"><a href="#">Términos & Condiciones</a></p>
+        <img class="fb" src="{% static 'Images/fb.png' %}">
+        <img class="ig" src="{% static 'Images/ig.png' %}">
+    </footer>
 
 </body>
 </html>

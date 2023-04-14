@@ -34,9 +34,8 @@ def error (request):
     return render(request, 'error.html')
 
 #Info de animal específico
-def perfil_animal(request, id):
-    info_animal = get_object_or_404(Animal, id=id, status_ne='Adoptado')
-    return render(request, 'perfil_animal.html', {'info_animal':info_animal})
+def perfil_animal(request):
+    return render(request, 'perfil_animal.html')
 
 #* * * * * * C O M O   A D O P T A R * * * * * *
 def como_adoptar(request):

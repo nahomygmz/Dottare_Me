@@ -2192,3 +2192,172 @@ label[for="id_Monto"] {
     color: #7a7a7a;
 }
 
+/*B A R R A   D E    N A V E G A C I Ó N */
+
+.search-container {
+  position: relative;
+  margin: 0 auto;
+  width: 1118px;
+  height: 40px;
+  top: 175px;
+}
+
+label {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 39px;
+  color: #7a7a7a;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+input[type="text"],
+select {
+  height: 30px;
+  margin-right: 10px;
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 30px;
+  color: #7a7a7a;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  width: 200px;
+}
+
+.search-button {
+  position: absolute;
+  bottom: 0;
+  left: 615px;
+  background-color: #7CB9D1;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #66A5B6;
+}
+
+.card_animal{
+    position: absolute;
+    width: 261px;
+    height: 300px;
+    left: 115px;
+    top: 455px;
+    
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 40px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index: 1;
+}
+
+.vtc4{
+    position: absolute;
+    width: 695px;
+    height: 695px;
+    left: 92px;
+    top: 302px;
+    animation: blink 3s infinite;
+}
+
+.vtc5{
+    position: absolute;
+    width: 415px;
+    height: 472px;
+    left: 934px;
+    top: 992px;    
+    animation: blink 3s infinite;
+}
+
+.vtc6{
+    position: absolute;
+    width: 311px;
+    height: 365px;
+    left: 0px;
+    top: 950px;
+    animation: blink 3s infinite;
+}
+
+.vtc7{
+    position: absolute;
+    width: 212px;
+    height: 212px;
+    left: 895px;
+    top: 600px;
+    animation: blink 3s infinite;
+}
+
+.imagen_adoptar{
+    position: absolute;
+    width: 240px;
+    height: 212px;
+    left: 125px;
+    top: 465px;
+    
+    border-radius: 36px;
+    z-index: 3;
+}
+
+.nombre_adoptar{
+    position: absolute;
+    width: 60px;
+    height: 31px;
+    left: 129px;
+    top: 678px;
+    
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31px;
+    
+    color: #4B4848;    
+    z-index: 3;
+}
+
+.edad_sexo{
+    position: absolute;
+    width: 169px;
+    height: 31px;
+    left: 141px;
+    top: 710px;
+    
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 17px;
+    line-height: 31px;
+    
+    color: #4B4848;    
+    z-index: 3;
+}
+
+.bg_adoptar{
+    position: absolute;
+    width: 225px;
+    height: 27px;
+    left: 132px;
+    top: 710px;
+    
+    background: #F5C585;
+    border-radius: 52px;
+
+    z-index: 2;
+}
+
+/*P E R F I L   A N I M A L*/
