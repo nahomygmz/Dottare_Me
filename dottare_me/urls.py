@@ -13,5 +13,7 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('donacion/', views.donacion, name='donacion'),
     path('contacto/', views.contacto, name='contacto'), 
-    path('admin/', admin.site.urls),    
+    path('admin/', admin.site.urls),  
+    path('', include('admin_material.urls')),
+  
 ]
