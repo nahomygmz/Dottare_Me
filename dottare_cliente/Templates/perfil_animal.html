@@ -48,10 +48,27 @@
         </div>
     </nav>
 
-    <button class="btn_back"></button>
+    <button class="btn_back">
+        <a href="{% url 'adoptar' %}">
+            <img class="flechita" src="{% static 'Images\Perfil_Animal\flechas-izquierda1.png' %}">
+        </a>
+    </button>
     <h1 class="titulo77">Perfil del Animal</h1>
     <h3 class="nombreAnimal">Doggo</h3>
     <label class="raza">Beagle</label>
+
+    <div class="gallery" style="position: absolute; left: 100px; top: 350px;">
+        <div class="main-image">
+          <img src="{% static 'Images\Perfil_Animal\doggo1.jpg' %}" alt="Imagen 1">
+        </div>
+        <div class="thumbnail-images">
+          <img src="{% static 'Images\Perfil_Animal\doggo1.jpg' %}" alt="Imagen 1" class="thumbnail">
+          <img src="{% static 'Images\Perfil_Animal\doggo2.jpg' %}" alt="Imagen 2" class="thumbnail">
+          <img src="{% static 'Images\Perfil_Animal\doggo3.jpg' %}" alt="Imagen 3" class="thumbnail">
+          <img src="{% static 'Images\Perfil_Animal\doggo4.jpg' %}" alt="Imagen 4" class="thumbnail">
+        </div>
+    </div>
+      
 
     <label class="sexo">Sexo</label>
     <p class="sexo1">Varón</p>
@@ -62,11 +79,11 @@
     <label class="altura">Altura</label>
     <p class="altura1">41 cm</p>
 
-    <label class="edad">Fecha de Nacimiento</label>
-    <p class="fecchanac">04/07/2022</p>
+    <label class="fecchanac">Fecha de Nacimiento</label>
+    <p class="fecchanac1">04/07/2022</p>
 
     <label class="tamano">Tamaño</label>
-    <p class="tamano">Mediano</p>
+    <p class="tamano1">Mediano</p>
 
     <label class="peso">Peso</label>
     <p class="peso1">10 Kg</p>
@@ -75,29 +92,49 @@
     <p class="ubicacionn1">Refugio SDN</p>
 
     <label class="status">Status</label>
-    <p class="status">En adopción</p>
+    <p class="status1">En adopción</p>
 
     <div>
         <div class="card333"></div>
         <h2 class="descrip">Descripción</h2>
-        <p class="pdesc"></p>
-        <img class="iconoo"/>
+        <p class="pdesc">
+            Doggo es un hermoso beagle de un año de 
+            <br>edad con un pelaje rojizo brillante. Es un 
+            <br>perro activo y juguetón, siempre 
+            <br>dispuesto a explorar y jugar con sus amigos 
+            <br>humanos y peludos. Le encanta correr, 
+            <br>saltar y perseguir juguetes. Como la mayoría 
+            <br>de los beagles, tiene un sentido del olfato 
+            <br>muy agudo, por lo que disfruta mucho de los 
+            <br>paseos y explorar el mundo a través de su 
+            <br>nariz.
+        </p>
+        <img class="iconoo" src="{% static 'Images\Perfil_Animal\icon3.png' %}"/>
     </div>
 
-    <div>
+    <div style="position: absolute; left: 600px; top: 0px;">
         <div class="card333"></div>
         <h2 class="descrip">Salud</h2>
-        <p class="pdesc"></p>
-        <img class="iconoo"/>
+        <p class="pdesc">
+            Doggo está en buena salud. Ha recibido todas 
+            <br>sus vacunas y se sometió a un examen 
+            <br>veterinario completo antes de ser 
+            <br>puesto en adopción. Tiene un buen peso y está 
+            <br>en forma. Es un perro activo y enérgico, por 
+            <br>lo que es importante que reciba suficiente 
+            <br>ejercicio y una alimentación equilibrada 
+            <br>para mantenerse saludable.
+        </p>
+        <img class="iconoo" src="{% static 'Images\Perfil_Animal\icon2.png' %}"/>
     </div>
 
-    <img class="patita6"/>
-    <img class="patita7"/>
+    <img class="patita6" src="{% static 'Images\Perfil_Animal\patita6.png' %}"/>
+    <img class="patita7" src="{% static 'Images\Perfil_Animal\patita7.png' %}"/>
 
-    <button class="info">Más Información</button>
-
+    <button class="info"><a href="{% url 'contacto' %}">Más Información</a></button>
+    
     <!-- footer -->
-    <footer style="position: relative; top: -3090px;">
+    <footer style="position: relative; top: -2500px;">
         <img class="footer" src="{% static 'Images/footer.png' %}">
         <img class="perrodot" src="{% static 'Images/perrodot.png' %}">
         <p class="p15">© 2023 Dottare Me</p>

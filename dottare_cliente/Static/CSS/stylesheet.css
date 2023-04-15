@@ -2361,3 +2361,320 @@ select {
 }
 
 /*P E R F I L   A N I M A L*/
+.btn_back{
+    position: absolute;
+    width: 50px;
+    height: 48px;
+    left: 103px;
+    top: 245px;
+
+    border: none;
+    border-radius: 10px;
+    background: #faf9f9;
+    box-shadow: inset 5px 5px 10px #bebebe,
+                inset -5px -5px 10px #ffffff;
+}
+
+.titulo77{
+    position: absolute;
+    width: 363px;
+    height: 56px;
+    left: 166px;
+    top: 241px;
+
+    font-family: 'Verdana', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 56px;
+
+    color: #535353;
+
+}
+
+.nombreAnimal{
+    position: absolute;
+    width: 144px;
+    height: 56px;
+    left: 784px;
+    top: 345px;
+    
+    font-family: 'Verdana', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 56px;
+    
+    color: #4B4848;
+}
+
+.sexo, .edad,
+.altura, .fecchanac,
+.tamano, .peso, .ubicacionn,
+.status{
+    position: absolute;
+    width: 70px;
+    height: 33px;
+    left: 789px;
+    top: 454px;
+    
+    font-family: 'Verdana', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 33px;    
+    
+    color: #4B4848;    
+}
+
+.edad{
+    top: 517px;
+}
+
+.altura{
+    top: 580px;
+}
+
+.fecchanac{
+    width: 300px;
+    top: 643px;
+}
+
+.tamano{
+    top: 706px;
+}
+
+.peso{
+    top: 769px;
+}
+
+.ubicacionn{
+    top: 832px;
+}
+
+.status{
+    top: 895px;
+}
+
+.raza, .sexo1, .edad1,
+.altura1, .fecchanac1,
+.tamano1, .peso1, .ubicacionn1,
+.status1{
+    position: absolute;
+    width: 175px;
+    height: 35px;
+    left: 784px;
+    top: 390px;
+    
+    font-family: 'Verdana', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21.5px;
+    line-height: 35px;
+    
+    color: #C7C7C7;
+}
+
+.sexo1{
+    font-size: 18.5px;
+    left: 895px;
+    top: 454px;
+}
+.edad1{
+    font-size: 18.5px;
+    left: 895px;
+    top: 517px;
+}
+
+.altura1{
+    font-size: 18.5px;
+    left: 895px;
+    top: 582px;
+}
+
+.fecchanac1{
+    font-size: 18.5px;
+    left: 1030px;
+    top: 643px;
+}
+
+.tamano1{
+    font-size: 18.5px;
+    left: 905px;
+    top: 705px;
+}
+
+.peso1{
+    font-size: 18.5px;
+    left: 905px;
+    top: 767px;
+}
+
+.ubicacionn1{
+    font-size: 18.5px;
+    left: 905px;
+    top: 831px;
+
+}
+
+.status1{
+    font-size: 18.5px;
+    left: 905px;
+    top: 896px;
+}
+
+.patita6{
+    position: absolute;
+    left: 950px;
+    top: 930px;
+    animation: mover-patita 2s ease-in-out infinite alternate;
+    z-index: 1;
+}
+
+.patita7{
+    position: absolute;
+    top: 1610px;
+    animation: mover-patita 2s ease-in-out infinite alternate;
+    z-index: 1;
+}
+
+.card333{
+    position: absolute;
+    width: 490px;
+    height: 458px;
+    left: 130px;
+    top: 1100px;
+
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 40px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index: 0;
+}
+
+.descrip{
+    position: absolute;
+    width: 187px;
+    height: 41px;
+    left: 155px;
+    top: 1135px;
+    
+    font-family: 'Verdana', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 41px;
+    
+    color: #F5C585;
+}
+
+.pdesc{
+    position: absolute;
+    width: 514px;
+    height: 385px;
+    left: 155px;
+    top: 1190px;
+    
+    font-family: 'Verdana', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 29px;
+
+    text-align: justify;
+    text-justify: inter-word;
+    
+    color: #4B4848;
+}
+
+.iconoo{
+    position: absolute;
+    width: 90px;
+    height: 93px;
+    left: 510px;
+    top: 1455px;
+}
+
+.info{
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    left: 580px;
+    top: 1700px;
+
+    border: none;
+    border-radius: 53px;
+    background: #faf9f9;
+    box-shadow: inset 5px 5px 10px #bebebe,
+                inset -5px -5px 10px #ffffff;
+    
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 60px;
+    cursor: pointer;
+
+    /* Ajustes para alinear el texto en el centro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Verdana', sans-serif;
+    font-style: regular;
+    font-weight: 542;
+    font-size: 18px;
+    line-height: 65px;
+
+    color: #a7a7a7;
+
+    text-shadow: 0px 4px 4px #e3e8e9;  
+    transition: all 0.2s ease-in-out;
+}
+
+.info:hover {
+    color: #ffffff;
+    background-color: #7CB9D1;
+    box-shadow: 0 0 15px #7CB9D1,
+              inset 5px 5px 15px #7CB9D1,
+              inset -5px -5px 15px #7CB9D1;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-image {
+  width: 500px;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.main-image img {
+  width: 650px;
+  height: 650px;
+  object-fit: cover;
+}
+
+.thumbnail-images {
+  display: flex;
+  top: 10px;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.thumbnail:last-child {
+  margin-right: 0;
+}
+
+.thumbnail:hover {
+  border: 2px solid #7CB9D1;
+}

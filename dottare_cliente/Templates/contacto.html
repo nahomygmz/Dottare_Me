@@ -8,9 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
     <link rel="icon" href="{% static 'Images/Logoicon.ico' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-7WbdNwJKH0FP2Q4g4Kj7VX9vHk/7VJhjxuN8n7WLG5w5R5E1+vGUNR8LfQWlL30vA3lqLrkEDa8e7WYmqgG4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="{% static 'JS/Scripts.js' %}"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-7WbdNwJKH0FP2Q4g4Kj7VX9vHk/7VJhjxuN8n7WLG5w5R5E1+vGUNR8LfQWlL30vA3lqLrkEDa8e7WYmqgG4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <title>Contacto</title>
 </head>
 <body>
@@ -56,23 +59,24 @@
         <h3 class="subtitulo50">Si necesitas ayuda o más información, 
             <br>estaremos encantados de ayudarte.
         </h3>
-        <form method="POST" action="{% url 'contacto' %}">
+        <form id="form" method="POST" action="{% url 'contacto' %}">
             {% csrf_token %}
             {{ form.as_p }}
             <button type="submit" class="btn_neu4">Enviar</button>
         </form>
     </div>    
-      
 
     <!-- footer -->
-        <footer style="position: relative; top: -3090px;">
+    <footer style="position: relative; top: -3090px;">
             <img class="footer" src="{% static 'Images/footer.png' %}">
             <img class="perrodot" src="{% static 'Images/perrodot.png' %}">
             <p class="p15">© 2023 Dottare Me</p>
             <p class="p16"><a href="#">Términos & Condiciones</a></p>
             <img class="fb" src="{% static 'Images/fb.png' %}">
             <img class="ig" src="{% static 'Images/ig.png' %}">
-        </footer>
+    </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </body>
 </html>

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'dottare_cliente',
     'django_mysql',
+    #'jet',
 ]
 
 MIDDLEWARE = [
@@ -144,5 +145,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 PAYPAL_CLIENT_ID = 'AfMZofcKeg5Px7s5oFXAtAet4MHOrqHi9tHkQ2f3SvwGv6vHz7ByAY6ajoIpE-F16RHPrH_UNdSdjwXq'
 PAYPAL_CLIENT_SECRET = 'ENDURAdF_j1QUcckASTkpn_BJrSFN14unONKEHRaNPkbMZMjrXl49OM8vZ6Ev2rZpZJyfzIP1lROIBKN'
 PAYPAL_MODE = 'sandbox'  # o 'live', dependiendo de si se está trabajando en un ambiente de producción o de pruebas
-
 

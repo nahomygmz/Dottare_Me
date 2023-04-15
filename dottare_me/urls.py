@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from dottare_cliente import views
 
 urlpatterns = [
@@ -13,5 +13,5 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('donacion/', views.donacion, name='donacion'),
     path('contacto/', views.contacto, name='contacto'), 
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),    
 ]
