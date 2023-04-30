@@ -29,7 +29,6 @@ Dottare Me es una página web de adopción de animales en República Dominicana.
 • Listado de los formularios de adopción o apadrinamiento enviados por los potenciales clientes.
 
 ## Tecnologías utilizadas
-El proyecto se construyó utilizando las siguientes tecnologías:
 
 • Lenguajes de programación: HTML, CSS & JavaScript
 
