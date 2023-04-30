@@ -38,4 +38,4 @@ Dottare Me es una página web de adopción de animales en República Dominicana.
 
 • Gestor de BD: MySQL
 
-• APIs: Calendly y PayPal
+• APIs: Calendly & PayPal
