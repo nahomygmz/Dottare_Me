@@ -147,7 +147,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #P A Y P A L   C O N F I G
-PAYPAL_CLIENT_ID = 'AfMZofcKeg5Px7s5oFXAtAet4MHOrqHi9tHkQ2f3SvwGv6vHz7ByAY6ajoIpE-F16RHPrH_UNdSdjwXq'
-PAYPAL_CLIENT_SECRET = 'ENDURAdF_j1QUcckASTkpn_BJrSFN14unONKEHRaNPkbMZMjrXl49OM8vZ6Ev2rZpZJyfzIP1lROIBKN'
+PAYPAL_CLIENT_ID = 'id'
+PAYPAL_CLIENT_SECRET = 'key'
 PAYPAL_MODE = 'sandbox'  # o 'live', dependiendo de si se está trabajando en un ambiente de producción o de pruebas
 
